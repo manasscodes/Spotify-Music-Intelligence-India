@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* Spotify Color Palette */
+  --color-spotify-green: #1DB954;
+  --color-spotify-black: #121212;
+  --color-spotify-dark: #181818;
+  --color-spotify-hover: #282828;
+  --color-spotify-text: #FFFFFF;
+  --color-spotify-subtext: #B3B3B3;
+
+  /* Shadcn UI Variables (Mapping to our Dark Theme) */
+  --color-background: var(--color-spotify-black);
+  --color-foreground: var(--color-spotify-text);
+  --color-card: var(--color-spotify-dark);
+  --color-card-foreground: var(--color-spotify-text);
+  --color-primary: var(--color-spotify-green);
+  --color-primary-foreground: var(--color-spotify-black);
+  --color-secondary: var(--color-spotify-hover);
+  --color-secondary-foreground: var(--color-spotify-text);
+  --color-muted: var(--color-spotify-hover);
+  --color-muted-foreground: var(--color-spotify-subtext);
+  --color-border: var(--color-spotify-hover);
+  --color-input: var(--color-spotify-hover);
+  --color-ring: var(--color-spotify-green);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-spotify-black text-spotify-text antialiased;
+  }
+}
