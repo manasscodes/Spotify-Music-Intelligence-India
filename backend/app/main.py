@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from .routers import prediction # <-- Changed to relative import
+from .routers import prediction, analytics # <-- Added analytics
 
 app = FastAPI(
     title="Spotify India Intelligence API",
@@ -16,7 +16,9 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# Include Routers
 app.include_router(prediction.router, prefix="/api/v1", tags=["Prediction"])
+app.include_router(analytics.router, prefix="/api/v1", tags=["Analytics"]) # <-- Added
 
 @app.get("/")
 def root():
