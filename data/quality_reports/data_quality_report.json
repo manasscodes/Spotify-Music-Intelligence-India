@@ -1,0 +1,27 @@
+{
+    "indian_dataset": {
+        "completeness_score": 100.0,
+        "uniqueness_score": 100.0,
+        "validity_score": 100.0,
+        "overall_health_score": 100.0,
+        "row_count": 34999,
+        "column_count": 19,
+        "duplicate_rows": 0,
+        "missing_cells": 1
+    },
+    "global_dataset": {
+        "completeness_score": 99.99,
+        "uniqueness_score": 100.0,
+        "validity_score": 100.0,
+        "overall_health_score": 100.0,
+        "row_count": 17358,
+        "column_count": 15,
+        "duplicate_rows": 0,
+        "missing_cells": 15
+    },
+    "strategic_notes": [
+        "Global Dataset lacks audio features (danceability, energy, etc.). It cannot be used for Audio Intelligence or Hit Prediction modeling.",
+        "Indian Dataset 'popularity' min is 25.0. The dataset is pre-filtered to exclude highly unpopular songs. Hit classification threshold must be adjusted accordingly.",
+        "Global Dataset 'artist_genres' was 19% missing and filled with 'unknown'. Genre analysis on Global data will have a gap."
+    ]
+}

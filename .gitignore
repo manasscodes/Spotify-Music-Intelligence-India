@@ -1,0 +1,22 @@
+# Virtual Environment
+venv/
+
+# Data files (Never push raw data to GitHub)
+data/raw/
+data/processed/
+data/models/
+
+# Environment variables (Secrets!)
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+anaconda_projects/
+.virtual_documents
