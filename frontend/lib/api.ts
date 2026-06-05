@@ -1,4 +1,4 @@
-const API_BASE_URL = "http://127.0.0.1:8000/api/v1";
+const API_BASE_URL = "https://spotify-india-api.onrender.com/api/v1";
 
 export async function fetchAnalytics() {
   const res = await fetch(`${API_BASE_URL}/analytics/overview`, { cache: 'no-store' });
