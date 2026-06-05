@@ -1,78 +1,103 @@
 
 # 🎵 Spotify India Intelligence Platform
 
-An AI-powered, full-stack analytics platform that analyzes Indian music consumption trends across 16 languages, forecasts regional popularity, and predicts hit songs using Machine Learning.
+**Live Demo:** [https://spotify-music-intelligence-india.vercel.app/](https://spotify-music-intelligence-india.vercel.app/)
 
-![Next.js](https://img.shields.io/badge/Next.js-16-black?style=for-the-badge&logo=next.js)
-![FastAPI](https://img.shields.io/badge/FastAPI-0.111-009688?style=for-the-badge&logo=fastapi)
-![XGBoost](https://img.shields.io/badge/XGBoost-2.0-FF6600?style=for-the-badge&logo=xgboost)
-![Python](https://img.shields.io/badge/Python-3.12-3776AB?style=for-the-badge&logo=python)
-![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript)
+An AI-powered, full-stack analytics platform that analyzes Indian music consumption trends across 16 languages, forecasts regional popularity, and predicts hit songs using Machine Learning. Built to resemble an internal premium SaaS tool used by Product Managers, Data Scientists, and Regional Growth Teams at Spotify.
 
 ---
 
-## 📸 Application Sneak Peek
+## 🚀 Overview
 
-| Executive Overview Dashboard | Hit Prediction AI Lab |
-|:---:|:---:|
-| ![Executive Overview Dashboard](assets/dashboard-overview.png) | ![Hit Prediction Lab](assets/hit-prediction-lab.png) |
-| *Real-time KPIs & Language Distribution* | *Interactive XGBoost predictions with custom inputs* |
+The Indian music market is not a monolith; it's a highly fragmented, multilingual constellation of markets. A one-size-fits-all recommendation engine fails to capture the nuances of Punjabi vs. Tamil vs. Telugu music. 
 
----
+**The Problem:** Spotify India lacks a centralized, AI-driven intelligence system to visualize regional audio DNA, forecast language momentum, and predict song success before allocating marketing budgets.
 
-## 🎯 The Business Problem
+**The Solution:** This platform provides an end-to-end analytical suite—from data quality auditing to interactive hit prediction—to empower strategic content investment and playlist curation.
 
-Spotify India operates in a highly fragmented, multilingual market. A one-size-fits-all recommendation engine fails to capture regional nuances, leaving growth opportunities on the table for Punjabi, Tamil, Telugu, and other regional markets. 
+**Who is this for?** Product Managers, Music Strategists, Data Scientists, and Artist Relations Teams.
 
-**The Solution:** An internal intelligence dashboard that empowers Product Managers, Music Strategists, and Regional Growth Teams to:
-1. Understand which languages are gaining momentum.
-2. Identify what audio profiles drive success regionally.
-3. Predict whether a track will be a hit *before* allocating marketing spend.
+**Why is it useful?** It transforms raw audio metadata and historical trends into actionable business insights (e.g., "Punjabi music shows sustained momentum; adjust playlist strategy," or "High danceability + Star Power = Hit").
 
 ---
 
-## 🏗️ System Architecture
+## ✨ Features
 
-This project follows a strict separation of concerns, utilizing a modern AI/SaaS architecture:
+### 📊 Analytics & Intelligence
+*   **Executive Overview:** Real-time KPIs (Total Songs, Artists, Languages, Hit Rate) and language catalog distribution.
+*   **Language Analytics:** Deep dive into track counts and performance metrics across 16 Indian languages.
+*   **Audio Intelligence:** Radar charts comparing the "Audio DNA" (Danceability, Energy, Tempo, etc.) of top languages.
+*   **Artist Intelligence:** Leaderboards identifying "Volume Titans" vs. "Consistency Champions" (filtering out one-hit wonders).
+*   **Future Forecasting:** 3-year popularity projections (2025-2027) per language using Holt-Winters Exponential Smoothing.
 
-![System Architecture](assets/architecture.png)
+### 🤖 Machine Learning & AI
+*   **Hit Prediction Lab:** Interactive tool where users input audio features to get a real-time hit probability score from an XGBoost classifier.
+*   **Explainable AI (SHAP):** Under-the-hood SHAP analysis revealing *why* songs are predicted as hits (e.g., Star Power outweighs Tempo).
+*   **Data Quality Intelligence:** Automated health scoring (Completeness, Uniqueness, Validity) and structural bias detection.
 
 ---
 
-## ⚙️ Tech Stack
+## 🛠️ Tech Stack
 
 | Category | Technologies |
-|---|---|
-| **Frontend** | Next.js 16, React 19, Tailwind CSS v4, Shadcn UI, Recharts, Lucide Icons |
+| :--- | :--- |
+| **Frontend** | Next.js 16 (App Router), React 19, Tailwind CSS v4, Shadcn UI, Recharts, Framer Motion, Lucide Icons |
 | **Backend** | FastAPI, Pydantic V2, Uvicorn, CORS Middleware |
-| **Machine Learning** | XGBoost, SHAP, Scikit-Learn, Statsmodels (Holt-Winters) |
-| **Data Engineering** | Pandas, NumPy, PyArrow (Parquet), `uv` Package Manager |
-| **Version Control** | Git, GitHub |
+| **Machine Learning** | XGBoost, SHAP, Scikit-Learn, Statsmodels (Holt-Winters), Pandas, NumPy |
+| **Data Engineering** | PyArrow (Parquet), `uv` Package Manager, Joblib |
+| **Deployment** | Vercel (Frontend), Render (Backend) |
 
 ---
 
-## 🧠 Key Engineering & ML Insights
+## 🏗️ Architecture / How It Works
 
-### 1. The "Popularity Floor" Data Bias
-During the data audit, I discovered the dataset was pre-filtered to a minimum popularity of 25. The model is blind to truly unpopular songs, which required adjusting the Hit/Non-Hit classification threshold and documenting this limitation for business stakeholders.
+This project follows a strict separation of concerns, utilizing a modern AI/SaaS split architecture:
 
-### 2. Regression to Classification Pivot
-Initial attempts to predict exact popularity scores (Regression) yielded only 5% R². Music popularity is heavily driven by non-linear external factors (movies, marketing). Pivoting to Hit Classification (>=75 popularity) provided a robust, business-valuable model (40% precision on hits).
+1.  **Pre-computation Layer:** Raw CSVs are unified, cleaned, and feature-engineered locally. ML models (XGBoost) are trained and serialized into `.pkl` files. Forecasts are pre-calculated and saved as JSON. This ensures the web server only handles inference/serving, not heavy computing.
+2.  **API Tier (FastAPI):** Loads the serialized models and Parquet data into memory on startup. Exposes REST endpoints for analytics and real-time ML inference via Pydantic schemas.
+3.  **Frontend Tier (Next.js):** Server Components fetch data from the FastAPI backend. Client Components handle interactive charts (Recharts) and user inputs (Hit Prediction Lab).
+4.  **Deployment:** The monorepo is split during deployment—Vercel builds the `frontend/` folder, Render builds the root Python backend.
 
-### 3. SHAP Explainability over Accuracy
-A 57% accurate model that explains *why* it made a choice is 100x more valuable than a black-box model. SHAP analysis revealed that **Artist Star Power** (`artist_target_enc`) dominates hit predictions, outweighing audio features like danceability.
-
-### 4. React 19 & Next.js 16 Compatibility
-Navigated the Tailwind v4 CSS variable migration and resolved Recharts hydration bugs by strictly separating Server Components (data fetching) from Client Components (charts/interactivity).
+```text
+[ Next.js Frontend (Vercel) ] --(REST)--> [ FastAPI Backend (Render) ] --(Read)--> [ Parquet / .pkl Artifacts ]
+```
 
 ---
 
-## 🚀 Local Setup & Installation
+## 📂 Folder Structure
+
+```text
+spotify-india-intelligence/
+│
+├── backend/
+│   └── app/
+│       ├── main.py                 # FastAPI entry point & CORS setup
+│       ├── routers/                # API endpoints (Prediction, Analytics, Audio, Forecast, etc.)
+│       ├── services/               # Business logic & ML model loading
+│       └── schemas/                # Pydantic request/response models
+│
+├── data/
+│   ├── processed/                  # Cleaned Parquet files & Pre-computed JSONs (Git-tracked for Render)
+│   └── models/                     # Serialized .pkl models (Git-tracked for Render)
+│
+├── frontend/
+│   ├── app/                        # Next.js App Router pages
+│   ├── components/                 # UI components (Shadcn, Recharts, Layout)
+│   └── lib/                        # API helpers and utilities
+│
+├── notebooks/                      # Jupyter Notebooks (EDA, Training, SHAP analysis)
+├── scripts/                        # Data pipeline & model training scripts
+└── requirements.txt                # Python dependencies
+```
+
+---
+
+## ⚙️ Installation & Setup
 
 ### Prerequisites
-- Python 3.12+
+- Python 3.11+ (3.11 recommended for ML library compatibility)
 - Node.js 18+
-- [uv](https://github.com/astral-sh/uv) (Python package manager)
+- [uv](https://github.com/astral-sh/uv) (Fast Python package manager)
 
 ### 1. Clone the Repository
 ```bash
@@ -89,11 +114,12 @@ source .venv/bin/activate  # On Windows: venv\Scripts\activate
 # Install Python dependencies
 uv pip install -r requirements.txt
 
-# Run Data Pipeline & Train Models (Generates .pkl files)
+# Run Data Pipeline & Train Models (Generates .pkl and parquet files)
 python scripts/consolidate_data.py
 python scripts/clean_data.py
 python scripts/generate_quality_report.py
 python scripts/feature_engineering.py
+python scripts/generate_forecasts.py
 python scripts/save_models.py
 
 # Start FastAPI Server
@@ -116,55 +142,71 @@ npm run dev
 
 ---
 
-## 📂 Project Structure
+## 🔑 Environment Variables
 
-```text
-spotify-india-intelligence/
-│
-├── assets/                         # Visuals for README
-│   ├── architecture.png
-│   ├── dashboard-overview.png
-│   └── hit-prediction-lab.png
-│
-├── backend/
-│   └── app/
-│       ├── main.py                 # FastAPI entry point
-│       ├── routers/                # API endpoints (Prediction, Analytics)
-│       ├── services/               # Business logic & ML loading
-│       └── schemas/                # Pydantic request/response models
-│
-├── data/
-│   ├── raw/                        # Original CSVs (Gitignored)
-│   ├── processed/                  # Cleaned Parquet files (Gitignored)
-│   └── models/                     # Serialized .pkl models (Gitignored)
-│
-├── frontend/
-│   ├── app/                        # Next.js App Router pages
-│   ├── components/                 # UI components (Shadcn, Charts, Layout)
-│   └── lib/                        # API helpers and utilities
-│
-├── notebooks/                      # Jupyter Notebooks (EDA, Training, SHAP)
-├── scripts/                        # Data pipeline & model training scripts
-└── requirements.txt                # Python dependencies
+For local development, the frontend is hardcoded to `http://127.0.0.1:8000/api/v1`. 
+
+For production deployment, update the API base URL in `frontend/lib/api.ts` to point to your live Render backend URL:
+```typescript
+const API_BASE_URL = "https://your-render-backend.onrender.com/api/v1"; 
 ```
 
----
-
-## 🗺️ Roadmap
-
-- [x] **Phase 1-5:** Data Pipeline, Cleaning, Feature Engineering
-- [x] **Phase 6-9:** XGBoost Classification, Forecasting, SHAP Explainability
-- [x] **Phase 10-11:** FastAPI Backend, Next.js Executive Dashboard, Hit Prediction Lab
-- [ ] **Phase 12:** Audio Intelligence Radar Charts
-- [ ] **Phase 13:** Future Forecasting Visualizations
-- [ ] **Phase 14:** Cloud Deployment (Vercel + Railway + Neon PostgreSQL)
+**Render Deployment Note:** Set the following Environment Variable in Render to ensure Python 3.11 is used (avoids C++ build failures with ML libraries):
+*   `PYTHON_VERSION` = `3.11.9`
 
 ---
 
-## 📄 License
+## 🧪 Usage
 
-This project is open source and available under the [MIT License](LICENSE).
+1.  **Executive View:** Launch the app and view high-level KPIs and language distribution.
+2.  **Audio DNA:** Navigate to "Audio Intelligence" to compare the radar charts of Hindi, Punjabi, Tamil, and Telugu music.
+3.  **Predict a Hit:** Go to "Hit Prediction Lab", adjust the audio feature sliders (Danceability, Energy, Tempo), and click "Predict" to see the XGBoost model's real-time hit probability.
+4.  **Forecasting:** Check "Future Forecasting" to view 3-year trend lines and confidence intervals for regional markets.
 
 ---
+
+## 📸 Screenshots / Demo
+
+*   **Executive Overview Dashboard:** Real-time KPIs and language catalog distribution bar chart.
+*   **Hit Prediction Lab:** Interactive sliders sending payloads to FastAPI and rendering XGBoost confidence scores.
+*   **Audio Intelligence:** Radar charts comparing language audio profiles.
+*   **Future Forecasting:** Line charts showing historical vs. predicted popularity with confidence intervals.
+
+*(Screenshots of these views should be added here to showcase the premium dark-theme UI)*
+
+---
+
+## 🚧 Challenges & Learnings
+
+Building this platform required several Senior Engineer-level pivots from initial assumptions:
+
+*   **The 5% R² Reality:** Initial attempts to predict exact popularity scores (Regression) yielded only 5% R². Music popularity is heavily driven by non-linear external factors (movies, marketing). **Learning:** Pivoted to Hit Classification (>=75 popularity) and used SHAP to explain predictions. A 57% accurate model that explains its reasoning is 100x more valuable than a black-box model.
+*   **Prophet vs. Holt-Winters:** Meta's Prophet library crashed on yearly data due to C++ backend issues and data granularity mismatch. **Learning:** Pivoted to Statsmodels Holt-Winters Exponential Smoothing, which is mathematically better suited for low-frequency (yearly) time series.
+*   **Python 3.13/3.14 Deployment Failures:** Deploying to Render failed because Pandas/XGBoost lacked pre-compiled wheels for the latest Python versions, forcing source compilation that exceeded memory limits. **Learning:** Locked Python version to 3.11.9 and switched from `pip` to `uv` for 10x faster dependency resolution.
+*   **React 19 & Tremor Incompatibility:** The `@tremor/react` library conflicted with React 19. **Learning:** Replaced Tremor with Shadcn UI + Recharts, providing complete control over the Spotify-dark theme.
+*   **Recharts Hydration Bug:** Server-side rendering of Recharts caused `-1 width/height` errors. **Learning:** Strictly isolated charts into Client Components using `"use client"` and mounted them via `useEffect` before rendering.
+
+---
+
+## 🔮 Future Improvements
+
+*   **Cloud Database Migration:** Move from static Parquet files to a hosted PostgreSQL (Neon) so the data can be updated via API without redeployment.
+*   **User Authentication:** Add NextAuth.js to gate the dashboard for internal team members only.
+*   **SHAP UI Integration:** Render the SHAP waterfall plots directly in the frontend Hit Prediction Lab, so users can visually see *why* the model made its prediction.
+*   **Expanded Forecasting:** Add forecasting capabilities for all 16 languages and genre-level granularities.
+
+---
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome! 
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+---
+
 
 Built with ☕ and 🎵 by [Manas Kolaskar](https://github.com/manasscodes)
