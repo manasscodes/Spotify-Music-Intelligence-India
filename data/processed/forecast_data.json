@@ -1,0 +1,898 @@
+[
+    {
+        "language": "Hindi",
+        "year": 2000,
+        "popularity": 71.05,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Hindi",
+        "year": 2001,
+        "popularity": 59.45,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Hindi",
+        "year": 2002,
+        "popularity": 61.53,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Hindi",
+        "year": 2003,
+        "popularity": 58.46,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Hindi",
+        "year": 2004,
+        "popularity": 68.09,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Hindi",
+        "year": 2005,
+        "popularity": 60.3,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Hindi",
+        "year": 2006,
+        "popularity": 62.95,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Hindi",
+        "year": 2007,
+        "popularity": 62.7,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Hindi",
+        "year": 2008,
+        "popularity": 62.91,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Hindi",
+        "year": 2009,
+        "popularity": 63.24,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Hindi",
+        "year": 2010,
+        "popularity": 63.73,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Hindi",
+        "year": 2011,
+        "popularity": 61.49,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Hindi",
+        "year": 2012,
+        "popularity": 59.98,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Hindi",
+        "year": 2013,
+        "popularity": 66.29,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Hindi",
+        "year": 2014,
+        "popularity": 64.74,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Hindi",
+        "year": 2015,
+        "popularity": 63.23,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Hindi",
+        "year": 2016,
+        "popularity": 57.73,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Hindi",
+        "year": 2017,
+        "popularity": 64.95,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Hindi",
+        "year": 2018,
+        "popularity": 61.87,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Hindi",
+        "year": 2019,
+        "popularity": 63.19,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Hindi",
+        "year": 2020,
+        "popularity": 62.62,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Hindi",
+        "year": 2021,
+        "popularity": 61.95,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Hindi",
+        "year": 2022,
+        "popularity": 67.85,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Hindi",
+        "year": 2023,
+        "popularity": 59.13,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Hindi",
+        "year": 2024,
+        "popularity": 60.0,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Hindi",
+        "year": 2025,
+        "popularity": 62.03,
+        "type": "forecast",
+        "ci_upper": 68.17,
+        "ci_lower": 55.9
+    },
+    {
+        "language": "Hindi",
+        "year": 2026,
+        "popularity": 61.98,
+        "type": "forecast",
+        "ci_upper": 68.12,
+        "ci_lower": 55.84
+    },
+    {
+        "language": "Hindi",
+        "year": 2027,
+        "popularity": 61.92,
+        "type": "forecast",
+        "ci_upper": 68.06,
+        "ci_lower": 55.78
+    },
+    {
+        "language": "Punjabi",
+        "year": 2000,
+        "popularity": 65.19,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Punjabi",
+        "year": 2001,
+        "popularity": 60.35,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Punjabi",
+        "year": 2002,
+        "popularity": 61.56,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Punjabi",
+        "year": 2003,
+        "popularity": 61.54,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Punjabi",
+        "year": 2004,
+        "popularity": 62.3,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Punjabi",
+        "year": 2005,
+        "popularity": 61.9,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Punjabi",
+        "year": 2006,
+        "popularity": 62.12,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Punjabi",
+        "year": 2007,
+        "popularity": 61.39,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Punjabi",
+        "year": 2008,
+        "popularity": 60.52,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Punjabi",
+        "year": 2009,
+        "popularity": 62.04,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Punjabi",
+        "year": 2010,
+        "popularity": 60.84,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Punjabi",
+        "year": 2011,
+        "popularity": 64.97,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Punjabi",
+        "year": 2012,
+        "popularity": 61.11,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Punjabi",
+        "year": 2013,
+        "popularity": 64.17,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Punjabi",
+        "year": 2014,
+        "popularity": 67.17,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Punjabi",
+        "year": 2015,
+        "popularity": 61.25,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Punjabi",
+        "year": 2016,
+        "popularity": 63.63,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Punjabi",
+        "year": 2017,
+        "popularity": 63.47,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Punjabi",
+        "year": 2018,
+        "popularity": 62.78,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Punjabi",
+        "year": 2019,
+        "popularity": 62.79,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Punjabi",
+        "year": 2020,
+        "popularity": 64.62,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Punjabi",
+        "year": 2021,
+        "popularity": 61.6,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Punjabi",
+        "year": 2022,
+        "popularity": 65.81,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Punjabi",
+        "year": 2023,
+        "popularity": 61.61,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Punjabi",
+        "year": 2024,
+        "popularity": 66.0,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Punjabi",
+        "year": 2025,
+        "popularity": 64.11,
+        "type": "forecast",
+        "ci_upper": 67.52,
+        "ci_lower": 60.69
+    },
+    {
+        "language": "Punjabi",
+        "year": 2026,
+        "popularity": 64.2,
+        "type": "forecast",
+        "ci_upper": 67.62,
+        "ci_lower": 60.79
+    },
+    {
+        "language": "Punjabi",
+        "year": 2027,
+        "popularity": 64.3,
+        "type": "forecast",
+        "ci_upper": 67.72,
+        "ci_lower": 60.88
+    },
+    {
+        "language": "Tamil",
+        "year": 2000,
+        "popularity": 60.04,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Tamil",
+        "year": 2001,
+        "popularity": 62.69,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Tamil",
+        "year": 2002,
+        "popularity": 63.28,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Tamil",
+        "year": 2003,
+        "popularity": 61.8,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Tamil",
+        "year": 2004,
+        "popularity": 62.21,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Tamil",
+        "year": 2005,
+        "popularity": 61.12,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Tamil",
+        "year": 2006,
+        "popularity": 65.48,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Tamil",
+        "year": 2007,
+        "popularity": 60.69,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Tamil",
+        "year": 2008,
+        "popularity": 63.89,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Tamil",
+        "year": 2009,
+        "popularity": 63.43,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Tamil",
+        "year": 2010,
+        "popularity": 60.24,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Tamil",
+        "year": 2011,
+        "popularity": 64.3,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Tamil",
+        "year": 2012,
+        "popularity": 63.45,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Tamil",
+        "year": 2013,
+        "popularity": 63.98,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Tamil",
+        "year": 2014,
+        "popularity": 63.13,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Tamil",
+        "year": 2015,
+        "popularity": 64.41,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Tamil",
+        "year": 2016,
+        "popularity": 65.9,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Tamil",
+        "year": 2017,
+        "popularity": 61.82,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Tamil",
+        "year": 2018,
+        "popularity": 59.86,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Tamil",
+        "year": 2019,
+        "popularity": 63.27,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Tamil",
+        "year": 2020,
+        "popularity": 65.07,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Tamil",
+        "year": 2021,
+        "popularity": 61.75,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Tamil",
+        "year": 2022,
+        "popularity": 60.59,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Tamil",
+        "year": 2023,
+        "popularity": 60.81,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Tamil",
+        "year": 2024,
+        "popularity": 68.2,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Tamil",
+        "year": 2025,
+        "popularity": 63.62,
+        "type": "forecast",
+        "ci_upper": 67.57,
+        "ci_lower": 59.66
+    },
+    {
+        "language": "Tamil",
+        "year": 2026,
+        "popularity": 63.68,
+        "type": "forecast",
+        "ci_upper": 67.63,
+        "ci_lower": 59.72
+    },
+    {
+        "language": "Tamil",
+        "year": 2027,
+        "popularity": 63.74,
+        "type": "forecast",
+        "ci_upper": 67.69,
+        "ci_lower": 59.78
+    },
+    {
+        "language": "Telugu",
+        "year": 2000,
+        "popularity": 63.44,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Telugu",
+        "year": 2001,
+        "popularity": 61.81,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Telugu",
+        "year": 2002,
+        "popularity": 62.54,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Telugu",
+        "year": 2003,
+        "popularity": 61.67,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Telugu",
+        "year": 2004,
+        "popularity": 63.46,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Telugu",
+        "year": 2005,
+        "popularity": 63.53,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Telugu",
+        "year": 2006,
+        "popularity": 63.03,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Telugu",
+        "year": 2007,
+        "popularity": 61.67,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Telugu",
+        "year": 2008,
+        "popularity": 63.62,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Telugu",
+        "year": 2009,
+        "popularity": 61.07,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Telugu",
+        "year": 2010,
+        "popularity": 64.94,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Telugu",
+        "year": 2011,
+        "popularity": 62.06,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Telugu",
+        "year": 2012,
+        "popularity": 65.31,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Telugu",
+        "year": 2013,
+        "popularity": 63.06,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Telugu",
+        "year": 2014,
+        "popularity": 63.33,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Telugu",
+        "year": 2015,
+        "popularity": 65.58,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Telugu",
+        "year": 2016,
+        "popularity": 63.42,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Telugu",
+        "year": 2017,
+        "popularity": 61.76,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Telugu",
+        "year": 2018,
+        "popularity": 62.31,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Telugu",
+        "year": 2019,
+        "popularity": 61.93,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Telugu",
+        "year": 2020,
+        "popularity": 63.79,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Telugu",
+        "year": 2021,
+        "popularity": 61.98,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Telugu",
+        "year": 2022,
+        "popularity": 58.82,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Telugu",
+        "year": 2023,
+        "popularity": 63.85,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Telugu",
+        "year": 2024,
+        "popularity": 57.83,
+        "type": "historical",
+        "ci_upper": null,
+        "ci_lower": null
+    },
+    {
+        "language": "Telugu",
+        "year": 2025,
+        "popularity": 61.82,
+        "type": "forecast",
+        "ci_upper": 65.12,
+        "ci_lower": 58.52
+    },
+    {
+        "language": "Telugu",
+        "year": 2026,
+        "popularity": 61.76,
+        "type": "forecast",
+        "ci_upper": 65.06,
+        "ci_lower": 58.45
+    },
+    {
+        "language": "Telugu",
+        "year": 2027,
+        "popularity": 61.7,
+        "type": "forecast",
+        "ci_upper": 65.0,
+        "ci_lower": 58.39
+    }
+]

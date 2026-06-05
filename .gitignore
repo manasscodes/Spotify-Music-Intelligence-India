@@ -2,9 +2,20 @@
 venv/
 
 # Data files (Never push raw data to GitHub)
+# Data files
 data/raw/
-data/processed/
-data/models/
+
+# Ignore everything in processed and models
+data/processed/*
+data/models/*
+data/quality_reports/*
+
+# BUT allow these specific production artifacts
+!data/processed/indian_songs_cleaned.parquet
+!data/processed/forecast_data.json
+!data/quality_reports/data_quality_report.json
+!data/models/hit_classifier.pkl
+!data/models/model_features.pkl
 
 # Environment variables (Secrets!)
 .env
