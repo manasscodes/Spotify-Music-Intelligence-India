@@ -11,3 +11,9 @@ export async function fetchAudioProfiles() {
   if (!res.ok) throw new Error("Failed to fetch audio profiles");
   return res.json();
 }
+
+export async function fetchForecastData() {
+  const res = await fetch(`${API_BASE_URL}/forecast/trends`, { cache: 'no-store' });
+  if (!res.ok) throw new Error("Failed to fetch forecast data");
+  return res.json();
+}
