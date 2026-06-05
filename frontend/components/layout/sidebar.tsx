@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { BarChart2, Music, TrendingUp, BrainCircuit, Radio, Mic2, ShieldCheck } from "lucide-react";
 
 const navItems = [
-  { name: "Executive Overview", icon: BarChart2, path: "/" },
+  { name: "Executive Overview", icon: BarChart2, path: "/overview" },
   { name: "Language Analytics", icon: Music, path: "/language" },
   { name: "Popularity Trends", icon: TrendingUp, path: "/trends" },
   { name: "Audio Intelligence", icon: Radio, path: "/audio" },
