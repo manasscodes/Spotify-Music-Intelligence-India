@@ -31,7 +31,7 @@ export default function HitPredictionLab() {
   const handlePredict = async () => {
     setIsLoading(true);
     try {
-      const response = await fetch("http://127.0.0.1:8000/api/v1/predict/hit", {
+      const response = await fetch("http://spotify-india-api.onrender.com/api/v1/predict/hit", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(features),

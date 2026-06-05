@@ -31,9 +31,11 @@ export default function LanguageChart({ data }: LanguageChartProps) {
           axisLine={false} 
         />
         <YAxis stroke="#B3B3B3" fontSize={12} tickLine={false} axisLine={false} />
-        <Tooltip 
-          cursor={{ fill: '#282828' }} 
-          contentStyle={{ backgroundColor: '#181818', border: '1px solid #282828', borderRadius: '8px', color: '#fff' }} 
+        <Tooltip
+          cursor={{ fill: '#282828' }}
+          contentStyle={{ backgroundColor: '#181818', border: '1px solid #282828', borderRadius: '8px' }}
+          labelStyle={{ color: '#B3B3B3', fontWeight: 'bold' }}
+          itemStyle={{ color: '#FFFFFF' }}
         />
         <Bar dataKey="track_count" radius={[4, 4, 0, 0]}>
           {data.map((entry: any, index: number) => (
