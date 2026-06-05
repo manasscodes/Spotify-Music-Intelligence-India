@@ -1,6 +1,7 @@
 
 # 🎵 Spotify India Intelligence Platform
 
+![Spotify App Cover](/frontend/public/og-thumbnail.png)
 **Live Demo:** [https://spotify-music-intelligence-india.vercel.app/](https://spotify-music-intelligence-india.vercel.app/)
 
 An AI-powered, full-stack analytics platform that analyzes Indian music consumption trends across 16 languages, forecasts regional popularity, and predicts hit songs using Machine Learning. Built to resemble an internal premium SaaS tool used by Product Managers, Data Scientists, and Regional Growth Teams at Spotify.
