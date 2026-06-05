@@ -46,7 +46,7 @@ export default function Sidebar() {
       </nav>
       
       <div className="mt-auto pt-4 border-t border-spotify-hover">
-        <p className="text-xs text-spotify-subtext">v1.0.0 • Staff Engineer Build</p>
+        <p className="text-xs text-spotify-subtext">v1.0.0 • Manas Kolaskar Build</p>
       </div>
     </aside>
   );
